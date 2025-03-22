@@ -12,6 +12,23 @@ Each model was trained and evaluated using different preprocessing techniques an
 
 ---
 
+## Data Preprocessing
+- **Handling Missing Values**:
+  - `X9` (categorical) was filled with the mode.
+  - `X2` (numerical) was filled with the mean.
+- **Feature Selection**:
+  - `X1` (product ID) was dropped due to lack of relevance.
+  - `X2` and `X8` were dropped due to weak correlation with `Y`.
+- **One-Hot Encoding**:
+  - `X5`, `X7`, and `X11` were one-hot encoded.
+  - Only `X7_0`, `X7_4`, `X11_0`, `X11_1`, and `X11_3` were kept based on correlation.
+- **Label Encoding**:
+  - `X3`, `X9`, and `X10` were label-encoded but later dropped due to weak correlation.
+- **Standardization and Normalization**:
+  - `X6` was standardized for better model performance.
+
+---
+
 ## Models & Performance
 
 ### 1️⃣ Support Vector Regression (SVR) - **Best Performing Model**
@@ -75,7 +92,6 @@ Each model was trained and evaluated using different preprocessing techniques an
 ---
 
 ## 📌 Future Improvements
-- **Feature Selection**: Removing redundant variables.
 - **Hyperparameter Optimization**: Fine-tuning with Bayesian Optimization.
 - **More Models**: Exploring Neural Networks and LightGBM.
 
