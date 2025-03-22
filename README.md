@@ -81,11 +81,6 @@ Each model was trained and evaluated using different preprocessing techniques an
 
 ---
 
-## 📜 License
-This project is licensed under the MIT License.
-
----
-
 ### ✨ Author
 [Basem Walid](https://github.com/basemw0)
 
