@@ -78,7 +78,7 @@ Each model was trained and evaluated using different preprocessing techniques an
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/data-prediction-project.git
+   git clone https://github.com/basemw0/data-prediction-project.git
    ```
 2. Install dependencies:
    ```bash
